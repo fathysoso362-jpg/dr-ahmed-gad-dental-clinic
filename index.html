@@ -1,37 +1,141 @@
-<!-- Copyright (C) Microsoft Corporation. All rights reserved. -->
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-	<meta charset="utf-8" />
-	<title>Microsoft Account - Sign In</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="auth.css" />
+
+    <title>Dr. Ahmed Gad Dental Clinic</title>
+
 </head>
 
 <body>
-	<a class="branding" href="https://code.visualstudio.com/">
-		Visual Studio Code
-	</a>
-	<div class="message-container">
-		<div class="message">
-			You are signed in now and can close this page.
-		</div>
-		<div class="error-message">
-			An error occurred while signing in:
-			<div class="error-text"></div>
-		</div>
-	</div>
-	<script>
-		var search = window.location.search;
-		var error = (/[?&^]error=([^&]+)/.exec(search) || [])[1];
-		if (error) {
-			document.querySelector('.error-text')
-				.textContent = decodeURIComponent(error);
-			document.querySelector('body')
-				.classList.add('error');
-		}
-	</script>
+
+    <h1>Dr. Ahmed Gad Dental Clinic 🦷</h1>
+<img src="dental.jpg" width="400">
+    <h2>Welcome to Our Clinic</h2>
+
+    <p>We provide professional dental care in a comfortable and friendly environment.</p>
+
+    <p>Your smile is our priority.</p>
+<h2>Our Services</h2>
+<h2>Contact Us</h2>
+
+<p>📞 Phone: 01008079394</p>
+<p>📍 Address: Suez, Egypt</p>
+<p>🕐 Opening Hours: Saturday - Thursday, 3:30 AM - 8:00 PM</p>
+<ul>
+    <li>Dental Check-up 🦷</li>
+    <li>Teeth Cleaning ✨</li>
+    <li>Teeth Whitening 😁</li>
+    <li>Dental Fillings</li>
+    <li>Tooth Extraction</li>
+</ul>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Book an Appointment - Dr. Ahmed Gad</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: #eaf7ff;
+        }
+
+        h1 {
+            color: #0077b6;
+        }
+
+        input {
+            padding: 10px;
+            margin: 8px;
+            width: 250px;
+        }box-sizing: border-box;
+
+
+        button {
+            background-color: #0077b6;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Book an Appointment 🦷</h1>
+<h2>Dr. Ahmed Gad</h2>
+<p>Professional Dental Care & Beautiful Smiles</p>
+    <p>Fill in your information to book an appointment with Dr. Ahmed Gad.</p>
+<h3>Patient Information</h3>
+    <input type="text" placeholder="Patient Name">
+    <br>
+
+    <input type="tel" placeholder="Phone Number">
+    <br>
+<select>
+    <option>Select a Service</option>
+    <option>Dental Check-up</option>
+    <option>Teeth Cleaning</option>
+    <option>Teeth Whitening</option>
+    <option>Dental Filling</option>
+    <option>Tooth Extraction</option>
+</select>
+<br>
+    <input type="date">
+    <br>
+
+    <input type="time">
+    <br>
+
+    <button onclick="bookAppointment()">Book Now</button>
+
+<script>
+function bookAppointment() {
+    alert("Your appointment has been booked successfully! 🦷❤️");
+}
+</script>
+
+</body>
+</html>
+
 </body>
 
-</html>
+</html><head>
+    <title>Dr. Ahmed Gad Dental Clinic</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: #eaf7ff;
+        }
+
+        h1 {
+            color: #0077b6;
+        }
+
+        h2 {
+            color: #023e8a;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        a {
+            color: white;
+            background-color: #0077b6;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+
+
+
