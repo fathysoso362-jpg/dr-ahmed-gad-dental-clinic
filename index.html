@@ -1,83 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>Dr. Ahmed Gad Dental Clinic</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيادة د. أحمد جاد لطب الأسنان</title>
     <style>
-        body {
-            text-align: center;
-            font-family: Arial;
-            background-color: #eaf7ff;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
-            color: #0077b6;
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4fbff;
+            color: #17324d;
+            line-height: 1.8;
+        }
+        header {
+            background: linear-gradient(135deg, #0077b6, #00b4d8);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-size: 19px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 119, 182, 0.12);
+        }
+        .hero img {
+            width: 400px;
+            max-width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
         }
         h2 {
-            color: #023e8a;
+            color: #0077b6;
+            margin-bottom: 15px;
         }
-        p {
-            font-size: 18px;
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
         }
-        input,
-        select {
-            padding: 10px;
+        .service {
+            background: #eaf8ff;
+            padding: 18px;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+        .contact p {
+            font-size: 17px;
             margin: 8px;
-            width: 250px;
-            box-sizing: border-box;
+        }
+        input, select {
+            width: 90%;
+            max-width: 400px;
+            padding: 13px;
+            margin: 7px;
+            border: 1px solid #b8dff0;
+            border-radius: 10px;
+            font-size: 16px;
         }
         button {
-            background-color: #0077b6;
+            margin-top: 15px;
+            padding: 14px 40px;
+            background: #0077b6;
             color: white;
-            padding: 12px 25px;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: bold;
             cursor: pointer;
+        }
+        button:hover {
+            background: #023e8a;
+        }
+        footer {
+            background: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 26px;
+            }
+            .card {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Dr. Ahmed Gad Dental Clinic 🦷</h1>
-    <img src="dental.jpg" width="400">
-    <h2>Welcome to Our Clinic</h2>
-    <p>We provide professional dental care in a comfortable and friendly environment.</p>
-    <p>Your smile is our priority.</p>
-    <h2>Our Services</h2>
-    <ul>
-        <li>Dental Check-up 🦷</li>
-        <li>Teeth Cleaning ✨</li>
-        <li>Teeth Whitening 😁</li>
-        <li>Dental Fillings</li>
-        <li>Tooth Extraction</li>
-    </ul>
-    <h2>Contact Us</h2>
-    <p>📞 Phone: 01008079394</p>
-    <p>📍 Address: Suez, Egypt</p>
-    <p>🕐 Opening Hours: Saturday - Thursday, 3:30 AM - 8:00 PM</p>
-    <h2>Book an Appointment 🦷</h2>
-    <h2>Dr. Ahmed Gad</h2>
-    <p>Professional Dental Care & Beautiful Smiles</p>
-    <p>Fill in your information to book an appointment with Dr. Ahmed Gad.</p>
-    <h3>Patient Information</h3>
-    <input type="text" placeholder="Patient Name">
-    <br>
-    <input type="tel" placeholder="Phone Number">
-    <br>
-    <select>
-        <option>Select a Service</option>
-        <option>Dental Check-up</option>
-        <option>Teeth Cleaning</option>
-        <option>Teeth Whitening</option>
-        <option>Dental Filling</option>
-        <option>Tooth Extraction</option>
-    </select>
-    <br>
-    <input type="date">
-    <br>
-    <input type="time">
-    <br><br>
-    <button onclick="bookAppointment()">Book Now</button>
+    <header>
+        <h1>عيادة د. أحمد جاد لطب الأسنان 🦷</h1>
+        <p>رعاية متخصصة وابتسامة أجمل</p>
+    </header>
+    <div class="container">
+        <section class="card hero">
+            <img src="dental.jpg" alt="عيادة د. أحمد جاد لطب الأسنان">
+            <h2>مرحبًا بكم في عيادتنا</h2>
+            <p>نقدم رعاية متخصصة للأسنان في بيئة مريحة وودودة.</p>
+            <p>ابتسامتك هي أولويتنا ❤️</p>
+        </section>
+        <section class="card">
+            <h2>خدماتنا</h2>
+            <div class="services">
+                <div class="service">🦷 فحص الأسنان</div>
+                <div class="service">✨ تنظيف الأسنان</div>
+                <div class="service">😁 تبييض الأسنان</div>
+                <div class="service">🪥 حشو الأسنان</div>
+                <div class="service">🦷 خلع الأسنان</div>
+            </div>
+        </section>
+        <section class="card contact">
+            <h2>تواصل معنا</h2>
+            <p>📞 <strong>رقم الهاتف:</strong> 01008079394</p>
+            <p>📍 <strong>العنوان:</strong> السويس، مصر</p>
+            <p>🕐 <strong>مواعيد العمل:</strong> السبت - الخميس، من 3:30 صباحًا إلى 8:00 مساءً</p>
+        </section>
+        <section class="card">
+            <h2>احجز موعدك الآن 🦷</h2>
+            <h3>د. أحمد جاد</h3>
+            <p>املأ بياناتك لحجز موعد مع د. أحمد جاد.</p>
+            <br>
+            <input type="text" id="patientName" placeholder="اسم المريض">
+            <br>
+            <input type="tel" id="patientPhone" placeholder="رقم الهاتف">
+            <br>
+            <select id="service">
+                <option>اختر الخدمة</option>
+                <option>فحص الأسنان</option>
+                <option>تنظيف الأسنان</option>
+                <option>تبييض الأسنان</option>
+                <option>حشو الأسنان</option>
+                <option>خلع الأسنان</option>
+            </select>
+            <br>
+            <input type="date" id="appointmentDate">
+            <br>
+            <input type="time" id="appointmentTime">
+            <br>
+            <button onclick="bookAppointment()">احجز الآن</button>
+        </section>
+    </div>
+    <footer>
+        <p>© 2026 عيادة د. أحمد جاد لطب الأسنان</p>
+        <p>رعاية متخصصة لأسنانك في السويس 🦷</p>
+    </footer>
     <script>
         function bookAppointment() {
-            alert("Your appointment has been booked successfully! 🦷❤️");
+            const name = document.getElementById("patientName").value;
+            const phone = document.getElementById("patientPhone").value;
+            const service = document.getElementById("service").value;
+            const date = document.getElementById("appointmentDate").value;
+            const time = document.getElementById("appointmentTime").value;
+            const message =
+                "🦷 حجز موعد جديد - عيادة د. أحمد جاد\n\n" +
+                "👤 اسم المريض: " + name + "\n" +
+                "📞 رقم الهاتف: " + phone + "\n" +
+                "🦷 الخدمة: " + service + "\n" +
+                "📅 التاريخ: " + date + "\n" +
+                "⏰ الوقت: " + time;
+            const whatsappNumber = "201091027699";
+            const whatsappURL =
+                "https://wa.me/" + whatsappNumber +
+                "?text=" + encodeURIComponent(message);
+            window.open(whatsappURL, "_blank");
         }
     </script>
 </body>
